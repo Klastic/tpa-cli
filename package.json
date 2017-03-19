@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
+    "json-update": "^3.0.0",
     "twitter-pin-auth": "^0.2.0"
   }
 }
