@@ -5,16 +5,14 @@ const prompt = require('prompt');
 const program = require('commander');
 
 program.parse(process.argv);
-prompt.message = 'Enter';
-prompt.delimiter = ' ';
-
-
-if(!config.consumer_key[0] || !config.consumer_secret[0]) return console.log('You are missing your Key or Secret. Use setKey or setSecret to add them.');
+if(!config.consumer_key[0] || !config.consumer_secret[0]) return console.log('You are missing your Key or Secret. Use setKey or setSecret command to add them.');
 
 twitterPinAuth.requestAuthUrl()
 .then(function(url) {
     console.log('Authorization URL: '+url);
     prompt.start();
+    prompt.message = 'Enter';
+    prompt.delimiter = ' ';
     prompt.get(['pin'], function (err, result) {
         if (err) { return onErr(err); }
         twitterPinAuth.authorize(result.pin, function(err, data) {
