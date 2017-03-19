@@ -1,0 +1,14 @@
+{
+  "name": "twitter-pin-auth-cli",
+  "version": "1.0.0",
+  "description": "A CLI for Twitter's PIN-based authorization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Klastic",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
