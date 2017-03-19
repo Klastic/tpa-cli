@@ -4,9 +4,11 @@ const twitterPinAuth = new TwitterPinAuth(config.consumer_key, config.consumer_s
 const prompt = require('prompt');
 const program = require('commander');
 
-if(!config.consumer_key || !config.consumer_secret) return console.log('You are missing your Key or Secret. Use setKey or setSecret to add them.');
-
 program.parse(process.argv);
+
+if(!config.consumer_key[0] || !config.consumer_secret[0]) return console.log('You are missing your Key or Secret. Use setKey or setSecret to add them.');
+
+console.log(config.consumer_key[0]);
 
 twitterPinAuth.requestAuthUrl()
 .then(function(url) {
