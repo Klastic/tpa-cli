@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const program = require('commander');
+const json = require('json-update');
 
 program.parse(process.argv);
 
@@ -8,4 +9,7 @@ if (!program.args) {
   process.exit(1);
 }
 
-console.log(JSON.stringify(program.args));
+json.update('config.json',{consumer_key:program.args})
+.then(function(dat) { 
+  console.log('Your Key has been updated.') 
+});
