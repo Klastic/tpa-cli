@@ -3,9 +3,6 @@
 'use strict';
 
 const program = require('commander');
-// const TwitterPinAuth = require('twitter-pin-auth');
-// const config = require('./config');
-// const twitterPinAuth = new TwitterPinAuth(config.consumer_key, config.consumer_secret);
 
 program
 .version('1.0.0')
@@ -13,5 +10,3 @@ program
 .command('setSecret [secret]','Sets the Consumer Secret').alias('sS')
 .command('auth','Generates an OAuth URL and waits for the PIN to be entered to authorize the account.')  
 .parse(process.argv);
-
-console.log(process.argv);
