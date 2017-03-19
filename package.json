@@ -9,6 +9,7 @@
   "author": "Klastic",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "twitter-pin-auth": "^0.2.0"
   }
 }
