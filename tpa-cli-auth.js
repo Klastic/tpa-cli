@@ -7,10 +7,11 @@ const prompt = require('prompt');
 const program = require('commander');
 const chalk = require('chalk');
 
+
 program.parse(process.argv);
 if(!config.consumer_key[0] || !config.consumer_secret[0]) {
-    if(!config.consumer_key[0])console.log(chalk.styles.red.open + 'You are missing your Consumer Key. Use the'+ chalk.styles.red.close + chalk.styles.cyan.open +'setKey '+ chalk.styles.cyan.close + chalk.styles.red.open +' command to add it.' + chalk.styles.red.close);
-    if(!config.consumer_secret[0])console.log(chalk.styles.red.open + 'You are missing your Key or Secret. Use the' + chalk.styles.red.close + chalk.styles.cyan.open +' setSecret '+ chalk.styles.cyan.close + chalk.styles.red.open +' command to add it.' + chalk.styles.red.close);
+    if(!config.consumer_key[0])console.log(chalk.styles.red.open + 'You are missing your Consumer Key. Use '+ chalk.styles.red.close + chalk.styles.cyan.open +'tpa setKey YOURKEYHERE'+ chalk.styles.cyan.close + chalk.styles.red.open +' to add it.' + chalk.styles.red.close);
+    if(!config.consumer_secret[0])console.log(chalk.styles.red.open + 'You are missing your Comsumer Secret. Use the ' + chalk.styles.red.close + chalk.styles.cyan.open +'tpa setSecret YOURSECRETHERE'+ chalk.styles.cyan.close + chalk.styles.red.open +' to add it.' + chalk.styles.red.close);
     return;
 }
 var pin = () => {
