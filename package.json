@@ -9,6 +9,10 @@
    "bin" : {
     "tpa" : "./tpa-cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Klastic/tpa-cli"
+  },
   "author": "Klastic",
   "license": "MIT",
   "dependencies": {
