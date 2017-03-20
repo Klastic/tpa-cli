@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-   "bin" : {
-    "tpa" : "./tpa-cli.js"
+  "bin": {
+    "tpa": "./tpa-cli.js"
   },
   "repository": {
     "type": "git",
