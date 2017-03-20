@@ -3,7 +3,6 @@
 'use strict';
 
 const program = require('commander');
-// module.exports.program = program;
 
 program
 .version('1.0.0')
