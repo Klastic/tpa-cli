@@ -14,11 +14,6 @@
 
 If you are in need of a CLI tool for PIN Based Authorization for your twitter app you are in luck. With a few quick commands, you will be able to get a Token Key and Token Secret for your app to ack on behalf of the user.
 
-1. Install tpa-cli
-2. Add Consumer Key (setKey)
-3. Add Consumer Secret (setSecret)
-4. Run auth flow (auth)
-
 ## Install
 
 ```
@@ -27,6 +22,11 @@ $ npm i tpa-cli -g
 
 
 ## Usage
+
+1. Install tpa-cli
+2. Add Consumer Key (setKey)
+3. Add Consumer Secret (setSecret)
+4. Run auth flow (auth)
 
 **tpa [command]**
 
