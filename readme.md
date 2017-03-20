@@ -17,7 +17,7 @@
 ## Install
 
 ```
-$ npm install --save tpa-cli
+$ npm i tpa-cli -g
 ```
 
 
