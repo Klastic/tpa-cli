@@ -42,7 +42,7 @@ Commands:
     -h, --help     output usage information
     -V, --version  output the version number
 
-##Exapmle
+## Exapmle
 
     $ npm i tpa-cli -g
     $ tpa setKey kA6s14WcPTP9X3Bz5bAuAeEcV
