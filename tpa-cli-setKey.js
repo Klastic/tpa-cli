@@ -9,7 +9,7 @@ if (!program.args) {
   process.exit(1);
 }
 
-json.update('config.json',{consumer_key:program.args})
+json.update(__dirname+'/config.json',{consumer_key:program.args})
 .then(function(dat) { 
-  console.log('Your Key has been updated.') 
+  console.log('Your Key has been updated.');
 });

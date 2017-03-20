@@ -10,7 +10,7 @@ if (!program.args) {
   process.exit(1);
 }
 
-json.update('config.json',{consumer_secret:program.args})
+json.update(__dirname+'./config.json',{consumer_secret:program.args})
 .then(function(dat) { 
   console.log('Your Secret has been updated.') 
 });
