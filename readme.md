@@ -12,7 +12,12 @@
 <!--[![Build Status]()]()
 [![Coverage Status]()]()-->
 
-<!--Description here-->
+If you are in need of a CLI tool for PIN Based Authorization for your twitter app you are in luck. With a few quick commands, you will be able to get a Token Key and Token Secret for your app to ack on behalf of the user.
+
+1. Install tpa-cli
+2. Add Consumer Key (setKey)
+3. Add Consumer Secret (setSecret)
+4. Run auth flow (auth)
 
 ## Install
 
@@ -37,26 +42,17 @@ Commands:
     -h, --help     output usage information
     -V, --version  output the version number
 
+##Exapmle
+
+    $ npm i tpa-cli -g
+    $ tpa setKey kA6s14WcPTP9X3Bz5bAuAeEcV
+    $ tpa setSecret B3cK4DxesNYXB7sMlV1P1R3v2b9AA8L3kmG5U3fCrG683R3KDo
+    $ tpa auth
+    Authorization URL: https://twitter.com/oauth/authorize?oauth_token=sD3OuQEEEEEEzZdYEMABWshY1IN
+    Enter pin  1639493
+    Your Access Token Key: 4937231751-Sw1TyfuULWQIif8jcenoSU4d34eoep9bsexfUxG
+    Your Access Token Secret: Snc2x9ySGtEDxBxgMWPQ5dI9hjSEcjnEDse23KSHW8e91
+
 ## License
 
 MIT License
-
-Copyright (c) 2017 Daniel (Klastic) Cornelison
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
