@@ -7,6 +7,10 @@
 	<br>
 </h1>-->
 
+> [!WARNING]
+> **⚠️ DEPRECATED ⚠️**
+> This package is no longer maintained and does not work. Twitter has rebranded to X and the API has changed, breaking the PIN-based OAuth flow this tool relied on. No further updates will be made.
+
 > A CLI for Twitter's PIN-based authorization
 
 <!--[![Build Status]()]()
