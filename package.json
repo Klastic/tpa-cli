@@ -1,7 +1,7 @@
 {
   "name": "tpa-cli",
   "version": "1.0.3",
-  "description": "A CLI for Twitter's PIN-based authorization.",
+  "description": "[DEPRECATED] A CLI for Twitter's PIN-based authorization. No longer works as Twitter is now X and the API has changed.",
   "main": "tpa-cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
